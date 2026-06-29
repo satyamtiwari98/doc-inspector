@@ -1,0 +1,30 @@
+{
+  "name": "doc-inspector",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist --clean",
+    "prepare": "npm run build",
+    "test": "vitest"
+  },
+  "author": "Satyam Tiwari",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fast-xml-parser": "^5.9.3",
+    "file-type": "^22.0.1",
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
