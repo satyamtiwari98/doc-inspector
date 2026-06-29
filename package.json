@@ -1,9 +1,10 @@
 {
   "name": "doc-inspector",
   "version": "1.0.0",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "description": "Get page count, slide count, dimensions and metadata from PDF, DOCX and PPTX documents.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -12,9 +13,25 @@
     "prepare": "npm run build",
     "test": "vitest"
   },
+  "keywords": [
+    "pdf",
+    "docx",
+    "pptx",
+    "pages",
+    "slides",
+    "metadata",
+    "document"
+  ],
   "author": "Satyam Tiwari",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satyamtiwari98/doc-inspector.git"
+  },
+  "homepage": "https://github.com/satyamtiwari98/doc-inspector",
+  "bugs": {
+    "url": "https://github.com/satyamtiwari98/doc-inspector/issues"
+  },
   "dependencies": {
     "fast-xml-parser": "^5.9.3",
     "file-type": "^22.0.1",
